@@ -44,6 +44,10 @@ PRODUCT_COPY_FILES += \
 # Properties
 include $(LOCAL_PATH)/properties.mk
 
+# Rootdir
+PRODUCT_PACKAGES += \
+    init.olives.rc
+
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf
