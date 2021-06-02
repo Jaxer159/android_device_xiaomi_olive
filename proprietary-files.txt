@@ -4578,6 +4578,7 @@ vendor/etc/camera/new_morpho_hht_params_sony_imx486_ii_cn.xml
 vendor/etc/camera/new_morpho_hht_params_sony_imx486_ii_gl.xml
 vendor/etc/camera/new_morpho_hht_params_sony_imx486_ii_in.xml
 vendor/etc/camera/new_morpho_hht_params_sony_imx486_i_in.xml
+vendor/etc/camera/new_vdclear_hht_params_omnivision_8856_i_cn..xml
 vendor/etc/camera/new_vdclear_hht_params_omnivision_8856_i_cn.xml
 vendor/etc/camera/new_vdclear_hht_params_omnivision_8856_i_gl.xml
 vendor/etc/camera/new_vdclear_hht_params_omnivision_8856_ii_cn.xml
@@ -4608,6 +4609,7 @@ vendor/etc/camera/olive_imx486_ofilm_chromatix_factory.xml
 vendor/etc/camera/olive_imx486_ofilm_chromatix.xml
 vendor/etc/camera/olive_imx486_sunny_chromatix_factory.xml
 vendor/etc/camera/olive_imx486_sunny_chromatix.xml
+vendor/etc/camera/olivelite_arc_hdr_params_i.xml
 vendor/etc/camera/olivelite_imx486_sunny_chromatix.xml
 vendor/etc/camera/olive_ov02a10_ofilm_chromatix_factory.xml
 vendor/etc/camera/olive_ov02a10_ofilm_chromatix_india_plus.xml
@@ -4632,6 +4634,7 @@ vendor/etc/camera/olive_s5k2l7sx_sunny_chromatix.xml
 vendor/etc/camera/olive_s5k4h7_sunny_chromatix_factory.xml
 vendor/etc/camera/olive_s5k4h7_sunny_chromatix_india.xml
 vendor/etc/camera/olive_s5k4h7_sunny_chromatix.xml
+vendor/etc/camera/olivewood_arc_hdr_params_i.xml
 vendor/etc/camera/olivewood_gc02m1b_sunny_chromatix_factory.xml
 vendor/etc/camera/olivewood_gc02m1b_sunny_chromatix_indonesia.xml
 vendor/etc/camera/olivewood_gc02m1b_sunny_chromatix.xml
