@@ -21,3 +21,12 @@ COMMON_LUNCH_CHOICES := \
     aosp_olives-user \
     aosp_olives-userdebug \
     aosp_olives-eng
+
+#Xtended
+PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/xtended_olives.mk
+
+COMMON_LUNCH_CHOICES := \
+    xtended_olives-user \
+    xtended_olives-userdebug \
+    xtended_olives-eng
