@@ -20,7 +20,7 @@ PRODUCT_DEVICE := olives
 PRODUCT_NAME := lineage_olives
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi 8 / 8A / 8A Dual
+PRODUCT_MODEL := olives
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 
