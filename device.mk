@@ -11,6 +11,10 @@ $(call inherit-product, device/xiaomi/sdm439-common/sdm439.mk)
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1572
+TARGET_SCREEN_WIDTH := 720
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml \
@@ -53,10 +57,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf
 
+<<<<<<< HEAD
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1572
 TARGET_SCREEN_WIDTH := 720
 
+=======
+>>>>>>> b3069a98faad1b60dad2fe2b2676be9e2ffecf22
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)

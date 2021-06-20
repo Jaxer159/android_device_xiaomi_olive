@@ -1,6 +1,9 @@
 #
 # Copyright (C) 2021 The LineageOS Project
+#
 # SPDX-License-Identifier: Apache-2.0
+#
+
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.camera.aec.sync=1 \

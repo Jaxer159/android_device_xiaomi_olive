@@ -39,3 +39,12 @@ COMMON_LUNCH_CHOICES := \
     pixys_olives-user \
     pixys_olives-userdebug \
     pixys_olives-eng
+
+#Cherish
+PRODUCT_MAKEFILES += \
+    $(LOCAL_DIR)/cherish_olives.mk
+
+COMMON_LUNCH_CHOICES += \
+    cherish_olives-user \
+    cherish_olives-userdebug \
+    cherish_olives-eng
