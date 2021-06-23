@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021 The XtendedOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,6 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit some common Xtended stuff.
 $(call inherit-product, vendor/xtended/config/common_full_phone.mk)
+XTENDED_BUILD_TYPE := UNOFFICIAL
 
 # Inherit from olives device
 $(call inherit-product, device/xiaomi/olives/device.mk)
@@ -28,6 +29,3 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := "Xiaomi/olive/olive:10/QKQ1.191014.001/V12.0.2.0.QCNMIXM:user/release-keys"
-
-# Unofficial
-XTENDED_BUILD_TYPE := UNOFFICIAL
