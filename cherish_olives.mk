@@ -11,6 +11,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit some common cherishOS stuff.
 $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+CHERISH_NONGAPPS := true
+TARGET_BOOT_ANIMATION_RES := 720
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
 # Inherit from olives device
 $(call inherit-product, device/xiaomi/olives/device.mk)
@@ -28,8 +31,3 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := "Xiaomi/olive/olive:10/QKQ1.191014.001/V12.0.2.0.QCNMIXM:user/release-keys"
-
-# CherishOS
-CHERISH_NONGAPPS := true
-TARGET_BOOT_ANIMATION_RES := 720
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
