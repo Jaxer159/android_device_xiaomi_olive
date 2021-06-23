@@ -13,7 +13,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
 # Inherit from olives device
 $(call inherit-product, device/xiaomi/olives/device.mk)
