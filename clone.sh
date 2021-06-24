@@ -17,7 +17,16 @@ echo "Clone vendors..."
 git clone https://github.com/mi-msm8937/proprietary_vendor_xiaomi_msm8937-common vendor/xiaomi/msm8937-common
 git clone https://github.com/mi-msm8937/proprietary_vendor_xiaomi_sdm439-common vendor/xiaomi/sdm439-common
 git clone https://github.com/mi-msm8937/proprietary_vendor_xiaomi_olives vendor/xiaomi/olives
+echo "Clone camera vendor? yes/no?"
+read choice
+choice="${choice,,}"
+if [ "$choice" == "yes" ]; then
 git clone https://github.com/mi-msm8937/proprietary_vendor_xiaomi_olives-camera vendor/xiaomi/olives-camera
+elif [ "$choice" == "y" ]; then
+git clone https://github.com/mi-msm8937/proprietary_vendor_xiaomi_olives-camera vendor/xiaomi/olives-camera
+else
+echo "Abort."
+fi
 echo ""
 echo "File cloning completed!"
 # Clone end
