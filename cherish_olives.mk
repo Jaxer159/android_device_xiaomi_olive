@@ -12,8 +12,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit some common cherishOS stuff.
 $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 CHERISH_NONGAPPS := true
-TARGET_BOOT_ANIMATION_RES := 720
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
+
+# Boot animation
+TARGET_BOOT_ANIMATION_RES := 720
 
 # Inherit from olives device
 $(call inherit-product, device/xiaomi/olives/device.mk)
