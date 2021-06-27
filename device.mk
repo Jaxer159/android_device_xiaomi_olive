@@ -53,6 +53,9 @@ include $(LOCAL_PATH)/properties.mk
 PRODUCT_PACKAGES += \
     GoogleCameraGo
 
+# Property
+-include device/xiaomi/olivewood/product/tweaks.mk
+
 # Rootdir
 PRODUCT_PACKAGES += \
     init.olives.rc
