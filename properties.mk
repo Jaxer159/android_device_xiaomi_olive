@@ -9,3 +9,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.camera.aec.sync=1 \
 persist.vendor.camera.awb.sync=2 \
 persist.vendor.camera.expose.aux=1
+
+# Charger
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.vendor.ctm.disallowed=true
