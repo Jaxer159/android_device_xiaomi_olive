@@ -32,5 +32,8 @@ VENDOR_SECURITY_PATCH := 2021-03-01
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/biometrics/sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
+# Enable real time lockscreen charging current values
+BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
+
 # Inherit from the proprietary version
 include vendor/xiaomi/olives/BoardConfigVendor.mk
