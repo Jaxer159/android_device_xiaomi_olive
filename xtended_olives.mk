@@ -12,6 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit some common Xtended stuff.
 $(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 XTENDED_BUILD_TYPE := UNOFFICIAL
+XTENDED_MAINTAINER := jaxer159
 
 # Inherit from olives device
 $(call inherit-product, device/xiaomi/olives/device.mk)
