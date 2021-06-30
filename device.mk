@@ -49,6 +49,10 @@ PRODUCT_COPY_FILES += \
 # Properties
 include $(LOCAL_PATH)/properties.mk
 
+# Prebuilt packages
+PRODUCT_PACKAGES += \
+    GoogleCameraGo
+
 # Rootdir
 PRODUCT_PACKAGES += \
     init.olives.rc
