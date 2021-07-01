@@ -54,7 +54,7 @@ PRODUCT_PACKAGES += \
     GoogleCameraGo
 
 # Property
--include device/xiaomi/olivewood/product/tweaks.mk
+-include device/xiaomi/olives/product/tweaks.mk
 
 # Rootdir
 PRODUCT_PACKAGES += \
