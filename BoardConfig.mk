@@ -10,7 +10,7 @@ include device/xiaomi/sdm439-common/BoardConfigCommon.mk
 DEVICE_PATH := device/xiaomi/olives
 
 # Asserts
-TARGET_OTA_ASSERT_DEVICE := olive,olivelite,olivewood,olives
+TARGET_OTA_ASSERT_DEVICE := olive,olivelite,olivewood,olives,privet
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
