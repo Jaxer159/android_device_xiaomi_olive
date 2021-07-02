@@ -36,3 +36,7 @@ ro.config.dha_lmk_scale=0.545 \
 ro.config.dha_th_rate=2.3 \
 ro.config.sdha_apps_bg_max=64 \
 ro.config.sdha_apps_bg_min=8
+
+# Fast App Launch
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.device_config.runtime_native.usap_pool_enabled=true
