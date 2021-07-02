@@ -40,3 +40,14 @@ ro.config.sdha_apps_bg_min=8
 # Fast App Launch
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.device_config.runtime_native.usap_pool_enabled=true
+
+# Graphic
+debug.sf.disable_backpressure=1
+debug.sf.enable_hwc_vds=0
+debug.sf.hw=0
+debug.sf.latch_unsignaled=1
+debug.hwui.renderer=skiagl
+persist.demo.hdmirotationlock=false
+ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
+ro.surface_flinger.max_virtual_display_dimension=4096
+vendor.display.disable_skip_validate=1
