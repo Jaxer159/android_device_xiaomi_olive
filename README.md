@@ -27,4 +27,4 @@ budget smartphone from Xiaomi.
  
 
   ## Device picture
-  ![ Redmi 8 ](https://www.google.com/url?sa=i&url=https%3A%2F%2Fru.banggood.com%2FXiaomi-Redmi-8-Global-Version-6_22-inch-Dual-Rear-Camera-4GB-64GB-5000mAh-Snapdragon-439-Octa-core-4G-Smartphone-p-1582781.html&psig=AOvVaw0-_koEXD3RTSZ3uetbO131&ust=1625736776940000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCPjEl9rT0PECFQAAAAAdAAAAABAD "Xiaomi Redmi 8")
+  ![ Redmi 8 ](https://avatars.mds.yandex.net/get-mpic/3732535/img_id8791006942711877527.png/13hq "Xiaomi Redmi 8")
