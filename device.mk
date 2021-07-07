@@ -49,6 +49,9 @@ PRODUCT_COPY_FILES += \
 # Properties
 include $(LOCAL_PATH)/properties.mk
 
+# Tweaks
+-include device/xiaomi/olives/product/tweaks.mk
+
 # Rootdir
 PRODUCT_PACKAGES += \
     init.olives.rc
