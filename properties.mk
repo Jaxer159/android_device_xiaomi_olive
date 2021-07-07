@@ -65,3 +65,9 @@ ro.hwui.text_small_cache_width=1024 \
 ro.hwui.text_small_cache_height=1024 \
 ro.hwui.text_large_cache_width=2048 \
 ro.hwui.text_large_cache_height=2048
+
+# ZRAM
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.zram.mark_idle_delay_mins=60 \
+ro.zram.first_wb_delay_mins=180 \
+ro.zram.periodic_wb_delay_hours=24
