@@ -18,6 +18,9 @@ BUILD_BROKEN_DUP_RULES := true
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
+# HWUI
+HWUI_COMPILE_FOR_PERF := true
+
 # Kernel
 TARGET_KERNEL_CONFIG := olive-perf_defconfig
 TARGET_KERNEL_CLANG_VERSION := proton
