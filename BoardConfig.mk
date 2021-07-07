@@ -20,6 +20,7 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
 TARGET_KERNEL_CONFIG := olive-perf_defconfig
+TARGET_KERNEL_CLANG_VERSION := proton
 
 # Lights
 SOONG_CONFIG_XIAOMI_MSM8937_LIGHTS_WHITE_LED := false
