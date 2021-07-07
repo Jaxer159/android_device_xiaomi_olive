@@ -30,12 +30,3 @@ COMMON_LUNCH_CHOICES := \
     xtended_olives-user \
     xtended_olives-userdebug \
     xtended_olives-eng
-
-#PixysOS
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/pixys_olives.mk
-
-COMMON_LUNCH_CHOICES := \
-    pixys_olives-user \
-    pixys_olives-userdebug \
-    pixys_olives-eng
