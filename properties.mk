@@ -4,6 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Perf
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.sys.fflag.override.settings_fuse=false
+
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.camera.aec.sync=1 \
