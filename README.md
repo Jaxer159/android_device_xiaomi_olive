@@ -3,7 +3,7 @@ Copyright (C) 2021 - The LineageOS Project
   Device tree for Xiaomi Redmi 8 Series (olives)
   ==============
  
-  The Xiaomi Redmi 8 (codenamed "Olive") is an 
+  The Xiaomi Redmi 8 (codenamed "olive") is an 
 budget smartphone from Xiaomi.
  
   It was announced and released in October 2019.
