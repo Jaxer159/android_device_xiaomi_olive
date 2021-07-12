@@ -63,6 +63,10 @@ ro.surface_flinger.set_idle_timer_ms=9000 \
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
 ro.surface_flinger.protected_contents=true
 
+# Smoothens UI
+persist.service.lgospd.enable=0
+persist.service.pcsync.enable=0
+
 # ZRAM
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.zram.mark_idle_delay_mins=60 \
