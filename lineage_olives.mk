@@ -24,6 +24,14 @@ PRODUCT_MODEL := Redmi 8 Series
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 
+# Some build flags
+TARGET_BOOT_ANIMATION_RES := 720
+TARGET_FACE_UNLOCK := true
+TARGET_USES_BLUR := true
+TARGET_USES_AOSP_CHARGER := true
+IS_PHONE := true
+WITH_GAPPS := false
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
