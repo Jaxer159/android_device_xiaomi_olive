@@ -50,6 +50,10 @@ PRODUCT_COPY_FILES += \
 TARGET_SYSTEM_PROP += $(LOCAL_PATH)/system.prop
 TARGET_VENDOR_PROP += $(LOCAL_PATH)/vendor.prop
 
+# Prebuilt Packages
+PRODUCT_PACKAGES += \
+    FMRadioFix
+
 # Rootdir
 PRODUCT_PACKAGES += \
     init.olives.rc
