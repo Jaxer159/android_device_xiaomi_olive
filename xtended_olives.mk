@@ -14,6 +14,7 @@ $(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 XTENDED_BUILD_TYPE := UNOFFICIAL
 XTENDED_MAINTAINER := jaxer159
 TARGET_USES_AOSP_CHARGER := true
+TARGET_USES_BLUR := true
 
 # Inherit from olives device
 $(call inherit-product, device/xiaomi/olives/device.mk)
