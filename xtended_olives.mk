@@ -15,6 +15,7 @@ XTENDED_BUILD_TYPE := UNOFFICIAL
 XTENDED_MAINTAINER := jaxer159
 TARGET_USES_AOSP_CHARGER := true
 TARGET_USES_BLUR := true
+IS_PHONE := true
 
 # Inherit from olives device
 $(call inherit-product, device/xiaomi/olives/device.mk)
