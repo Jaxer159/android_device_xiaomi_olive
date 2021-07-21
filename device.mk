@@ -47,7 +47,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-goodix.kl
 
 # Properties
-include $(LOCAL_PATH)/properties.mk
+TARGET_SYSTEM_PROP += device/xiaomi/olives/system.prop
+TARGET_VENDOR_PROP += device/xiaomi/olives/vendor.prop
+
+# Prebuilt Packages
+PRODUCT_PACKAGES += \
+    FMRadioFix
 
 # Prebuilt packages
 PRODUCT_PACKAGES += \

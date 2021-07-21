@@ -10,7 +10,10 @@ include device/xiaomi/sdm439-common/BoardConfigCommon.mk
 DEVICE_PATH := device/xiaomi/olives
 
 # Asserts
-TARGET_OTA_ASSERT_DEVICE := olive,olivelite,olivewood,olives,privet
+TARGET_OTA_ASSERT_DEVICE := olive,olivelite,olivewood,olives
+
+# Build broken rules
+BUILD_BROKEN_DUP_RULES := true
 
 # Building
 BUILD_BROKEN_DUP_RULES := true
@@ -18,7 +21,7 @@ BUILD_BROKEN_DUP_RULES := true
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
-# HWUI
+# HWUI Compile
 HWUI_COMPILE_FOR_PERF := true
 
 # Kernel
