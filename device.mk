@@ -54,20 +54,6 @@ TARGET_VENDOR_PROP += device/xiaomi/olives/vendor.prop
 PRODUCT_PACKAGES += \
     FMRadioFix
 
-# Prebuilt packages
-PRODUCT_PACKAGES += \
-    GoogleCameraGo
-
-# Property
--include device/xiaomi/olives/product/tweaks.mk
-
-# Force enable VoLTE, VoWiFi
-PRODUCT_PROPERTY_OVERRIDES += \
-persist.dbg.ims_volte_enable=1 \
-persist.dbg.volte_avail_ovr=1 \
-persist.dbg.vt_avail_ovr=1 \
-persist.dbg.wfc_avail_ovr=1
-
 # Rootdir
 PRODUCT_PACKAGES += \
     init.olives.rc
