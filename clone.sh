@@ -24,3 +24,8 @@ git clone https://github.com/Jaxer159/camera_vendor_xiaomi_olives vendor/xiaomi/
 echo ""
 echo "File cloning completed!"
 # Clone end
+# Camera patch
+cp device/xiaomi/sdm439-common/patch/hardware/qcom-caf/msm8996/display/0001-gralloc-Allow-configuring-prod-camera-pixel-format-f.patch hardware/qcom-caf/msm8996/display/
+cd hardware/qcom-caf/msm8996/display/
+git am 0001-gralloc-Allow-configuring-prod-camera-pixel-format-f.patch
+echo "Done!"
