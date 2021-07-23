@@ -8,7 +8,7 @@
 
 set -e
 
-export DEVICE=olives
+export DEVICE=olive
 export DEVICE_COMMON=msm8937-common
 export VENDOR=xiaomi
 

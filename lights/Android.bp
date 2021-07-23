@@ -1,0 +1,34 @@
+soong_config_module_type {
+    name: "xiaomi_msm8937_lights_hal_cc_defaults",
+    module_type: "cc_defaults",
+    config_namespace: "XIAOMI_MSM8937_LIGHTS",
+    bool_variables: ["WHITE_LED"],
+    properties: ["cflags"],
+}
+
+xiaomi_msm8937_lights_hal_cc_defaults {
+    name: "xiaomi_msm8937_lights_hal_defaults",
+    soong_config_variables: {
+        WHITE_LED: {
+            cflags: ["-DWHITE_LED"],
+        },
+    },
+}
+
+cc_binary {
+    name: "android.hardware.lights-service.xiaomi_msm8937",
+    defaults: ["xiaomi_msm8937_lights_hal_defaults"],
+    relative_install_path: "hw",
+    init_rc: ["lights-xiaomi_msm8937.rc"],
+    vintf_fragments: ["lights-xiaomi_msm8937.xml"],
+    vendor: true,
+    shared_libs: [
+        "libbase",
+        "libbinder_ndk",
+        "android.hardware.light-ndk_platform",
+    ],
+    srcs: [
+        "Lights.cpp",
+        "main.cpp",
+    ],
+}
