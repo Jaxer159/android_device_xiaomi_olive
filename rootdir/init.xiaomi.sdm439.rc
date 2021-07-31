@@ -1,6 +1,0 @@
-# FM Antenna
-on property:hw.fm.init=0
-    write /sys/class/fm/fm_lan_enable/lan_enable 0
-
-on property:hw.fm.init=1
-    write /sys/class/fm/fm_lan_enable/lan_enable 1

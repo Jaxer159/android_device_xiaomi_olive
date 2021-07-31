@@ -1,89 +1,18 @@
-#
-# vendor.prop for olive
-#
 
-# Audio
-persist.vendor.btstack.enable.splita2dp=false
-ro.vendor.audio.sdk.ssr=false
-ro.vendor.audio.sdk.fluencetype=fluence
-vendor.audio.feature.incall_music.enable=true
-vendor.audio.flac.sw.decoder.24bit=true
-vendor.audio.offload.buffer.size.kb=64
-vendor.audio.offload.gapless.enabled=true
-vendor.audio.offload.multiaac.enable=true
-vendor.audio.offload.multiple.enabled=false
-vendor.audio.offload.track.enable=true
-vendor.audio.parser.ip.buffer.size=0
-vendor.audio.playback.mch.downsample=true
-vendor.audio.pp.asphere.enabled=false
-vendor.audio.safx.pbe.enabled=true
-vendor.audio.tunnel.encode=false
-vendor.audio.use.sw.alac.decoder=true
-vendor.audio.use.sw.ape.decoder=true
-vendor.audio_hal.period_size=192
-vendor.voice.conc.fallbackpath=deep-buffer
-vendor.voice.path.for.pcm.voip=true
-vendor.voice.playback.conc.disabled=true
-vendor.voice.record.conc.disabled=false
-vendor.voice.voip.conc.disabled=true
-persist.vendor.audio.fluence.speaker=true
-persist.vendor.audio.fluence.voicecall=true
-persist.vendor.audio.fluence.voicerec=false
-
-# Camera
-vendor.camera.display.lmax=1280x720
-vendor.camera.display.umax=1920x1080
-vendor.camera.hal1.packagelist=com.skype.raider,com.google.android.talk
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.qualcomm.qti.qmmi,com.huaqin.factory,com.westalgo.calibration
-vendor.camera.aux.packagelist1=com.huaqin.cameraautotest,com.xiaomi.cameratools,com.android.camera
-vendor.camera.aux.packagelist2=com.mi.AutoTest
-vendor.camera.lowpower.record.enable=1
-persist.vendor.camera.gyro.disable=0
-persist.vendor.camera.isp.clock.optmz=0
-persist.vendor.camera.stats.test=5
-persist.vendor.qti.telephony.vt_cam_interface=1
-persist.vendor.camera.aec.sync=1
-persist.vendor.camera.awb.sync=2
-persist.vendor.camera.expose.aux=1
-
-# CNE/DPM
-persist.vendor.cne.feature=1
-persist.vendor.dpm.feature=1
-persist.vendor.dpm.loglevel=0
-
-# Display
-ro.vendor.display.cabl=2
-vendor.display.disable_skip_validate=1
-vendor.display.enable_default_color_mode=1
-vendor.gralloc.enable_fb_ubwc=1
-
-# Media
-vendor.mm.enable.qcom_parser=1048575
-vendor.audio.hw.aac.encoder=true
-vendor.vidc.dec.downscalar_height=1088
-vendor.vidc.dec.downscalar_width=1920
-vendor.vidc.disable.split.mode=1
-vendor.vidc.enc.disable.pq=true
-vendor.vidc.enc.disable_bframes=1
-vendor.video.disable.ubwc=1
-
-# Memory optimizations
+# Memory optimization
 ro.vendor.qti.sys.fw.bservice_enable=true
+ro.vendor.qti.am.reschedule_service=true
 
-# Perf
-ro.vendor.extension_library=libqti-perfd-client.so
+# RAM Tweaks
+ro.config.fha_enable=true
+ro.sys.fw.bg_apps_limit=32
+ro.config.dha_cached_max=16
+ro.config.dha_empty_max=42
+ro.config.dha_empty_init=32
+ro.config.dha_lmk_scale=0.545
+ro.config.dha_th_rate=2.3
+ro.config.sdha_apps_bg_max=64
+ro.config.sdha_apps_bg_min=8
 
-# Netmgrd
-ro.vendor.use_data_netmgrd=true
-persist.vendor.data.mode=concurrent
-
-# Radio
-persist.vendor.radio.apm_sim_not_pwdn=1
-persist.vendor.radio.custom_ecc=1
-persist.vendor.radio.rat_on=combine
-persist.vendor.radio.sib16_support=1
-persist.vendor.radio.enableadvancedscan=false
-persist.vendor.data.iwlan.enable=true
-
-# USB
-persist.vendor.usb.config.extra=none
+# Zygote preforking
+persist.device_config.runtime_native.usap_pool_enabled=true

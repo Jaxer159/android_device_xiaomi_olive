@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The cherishOS Project
+# Copyright (C) 2021 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -9,27 +9,30 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit some common cherishOS stuff.
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+# Inherit some common LineageOS stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from olives device
 $(call inherit-product, device/xiaomi/olives/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := olives
-PRODUCT_NAME := cherish_olives
+PRODUCT_NAME := lineage_olives
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi 8 / 8A / 8A Dual
+PRODUCT_MODEL := Redmi 8 Series
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
+
+# Some build flags
+TARGET_BOOT_ANIMATION_RES := 720
+TARGET_FACE_UNLOCK := true
+TARGET_USES_BLUR := true
+TARGET_INCLUDE_PIXEL_CHARGER := true
+IS_PHONE := true
+WITH_GAPPS := false
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "Xiaomi/olive/olive:10/QKQ1.191014.001/V12.0.2.0.QCNMIXM:user/release-keys"
-
-# CherishOS
-#CHERISH_NONGAPPS := true
-TARGET_BOOT_ANIMATION_RES := 720
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
+BUILD_FINGERPRINT := "Xiaomi/olive/olive:10/QKQ1.191014.001/V12.0.3.0.QCNMIXM:user/release-keys"

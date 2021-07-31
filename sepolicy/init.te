@@ -1,2 +1,0 @@
-# FM
-allow init sysfs_fm_lan:file rw_file_perms;
