@@ -20,19 +20,21 @@ PRODUCT_DEVICE := olives
 PRODUCT_NAME := lineage_olives
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi 8 Series
+PRODUCT_MODEL := Redmi 8 / 8A / 8A Dual
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 
 # Some build flags
 TARGET_BOOT_ANIMATION_RES := 720
-TARGET_FACE_UNLOCK := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_USES_BLUR := true
 TARGET_INCLUDE_PIXEL_CHARGER := true
 IS_PHONE := true
-WITH_GAPPS := false
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="olive-user 10 QKQ1.191014.001 V12.5.1.0.QCNMIXM release-keys"
+
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "Xiaomi/olive/olive:10/QKQ1.191014.001/V12.0.3.0.QCNMIXM:user/release-keys"
+BUILD_FINGERPRINT := "Xiaomi/olive/olive:10/QKQ1.191014.001/V12.5.1.0.QCNMIXM:user/release-keys"

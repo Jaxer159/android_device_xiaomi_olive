@@ -15,7 +15,7 @@ fi
 set -e
 
 export DEVICE=olives
-export DEVICE_COMMON=msm8937-common
+export DEVICE_COMMON=sdm439-common
 export VENDOR=xiaomi
 
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"

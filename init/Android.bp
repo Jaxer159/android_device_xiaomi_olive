@@ -1,0 +1,12 @@
+//
+// Copyright (C) 2021 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library_static {
+    name: "libinit_olives",
+    defaults: ["//device/xiaomi/sdm439-common:libinit_sdm439_defaults"],
+    srcs: ["init_olives.cpp"],
+    whole_static_libs: ["//device/xiaomi/sdm439-common:libinit_sdm439"],
+}

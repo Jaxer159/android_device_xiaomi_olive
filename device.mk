@@ -9,7 +9,8 @@ $(call inherit-product, device/xiaomi/sdm439-common/sdm439.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-lineage
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1572
@@ -33,22 +34,19 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
 
+# Dexpreopt
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Launcher3QuickStep \
+    Settings \
+    SystemUI
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.xiaomi_olives \
     android.hardware.biometrics.fingerprint@2.2
 
-# Input
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/ft5x06_ts.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/ft5x06_ts.kl \
-    $(LOCAL_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl \
-    $(LOCAL_PATH)/keylayout/qpnp_pon.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/qpnp_pon.kl \
-    $(LOCAL_PATH)/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl \
-    $(LOCAL_PATH)/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-goodix.kl
-
 # Properties
-TARGET_SYSTEM_PROP += device/xiaomi/olives/system.prop
-TARGET_VENDOR_PROP += device/xiaomi/olives/vendor.prop
+include $(LOCAL_PATH)/properties.mk
 
 # Rootdir
 PRODUCT_PACKAGES += \
