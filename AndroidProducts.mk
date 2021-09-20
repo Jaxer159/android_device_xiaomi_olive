@@ -4,6 +4,15 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+#ArrowOS
+PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/arrow_olives.mk
+
+COMMON_LUNCH_CHOICES := \
+    arrow_olives-user \
+    arrow_olives-userdebug \
+    arrow_olives-eng
+
 #LOS
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_olives.mk
