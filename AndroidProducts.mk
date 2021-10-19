@@ -39,3 +39,12 @@ COMMON_LUNCH_CHOICES := \
     aosp_olives-user \
     aosp_olives-userdebug \
     aosp_olives-eng
+
+#Nusantra
+PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/nad_olives.mk
+
+COMMON_LUNCH_CHOICES := \
+    nad_olives-user \
+    nad_olives-userdebug \
+    nad_olives-eng
