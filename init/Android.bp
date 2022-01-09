@@ -5,8 +5,8 @@
 //
 
 cc_library_static {
-    name: "libinit_olives",
+    name: "libinit_olive",
     defaults: ["//device/xiaomi/sdm439-common:libinit_sdm439_defaults"],
-    srcs: ["init_olives.cpp"],
+    srcs: ["init_olive.cpp"],
     whole_static_libs: ["//device/xiaomi/sdm439-common:libinit_sdm439"],
 }

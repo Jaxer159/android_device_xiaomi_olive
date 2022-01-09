@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service.xiaomi_olives"
-#define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.1-service.xiaomi_olives"
+#define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service.xiaomi_olive"
+#define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.1-service.xiaomi_olive"
 
 #include <hardware/hw_auth_token.h>
 
@@ -265,12 +265,12 @@ fingerprint_device_t* BiometricsFingerprint::openTheHal(const char *hwmdl_name) 
 }
 
 void BiometricsFingerprint::setFpSensorProp(std::string hwmdl_name) {
-    android::base::SetProperty("vendor.fingerprint.hwmdl", hwmdl_name);
+    android::base::SetProperty("persist.vendor.fingerprint.hwmdl", hwmdl_name);
 }
 
 fingerprint_device_t* BiometricsFingerprint::openHal() {
     fingerprint_device_t *fp_device;
-    std::string last_hwmdl_name = android::base::GetProperty("vendor.fingerprint.hwmdl", "");
+    std::string last_hwmdl_name = android::base::GetProperty("persist.vendor.fingerprint.hwmdl", "");
 
     if (!last_hwmdl_name.empty() && last_hwmdl_name != "failed") {
         ALOGI("Directly loading fingerprint HAL with hardware module id: %s.", last_hwmdl_name.c_str());
